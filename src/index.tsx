@@ -8,6 +8,7 @@ import {Route,Routes,BrowserRouter} from 'react-router-dom'
 import PartTwo from './Animation/PartTwo';
 import PartOne from './Animation/PartOne';
 import PartThree from './Animation/PartThree';
+import PartFour from './Animation/PartFour';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -33,6 +34,7 @@ root.render(
       <Route path="/part1" element={<PartOne />} />
       <Route path="/part2" element={<PartTwo />} />
       <Route path="/part3" element={<PartThree />} />
+      <Route path="/part4" element={<PartFour />} />
     </Routes>
     <App />
     </BrowserRouter>

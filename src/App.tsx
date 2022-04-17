@@ -12,6 +12,7 @@ const App = () => {
       <Link to="part1">part1</Link>
       <Link to="part2">part2</Link>
       <Link to="part3">part3</Link>
+      <Link to="part4">part4</Link>
     </Container>
   );
 };
