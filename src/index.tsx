@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createGlobalStyle} from 'styled-components'
+import {Route,Routes,BrowserRouter} from 'react-router-dom'
+import PartTwo from './Animation/PartTwo';
+import PartOne from './Animation/PartOne';
+import PartThree from './Animation/PartThree';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -23,8 +27,15 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <GlobalStyle/>
+    <Routes>
+      <Route path="/part1" element={<PartOne />} />
+      <Route path="/part2" element={<PartTwo />} />
+      <Route path="/part3" element={<PartThree />} />
+    </Routes>
     <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
